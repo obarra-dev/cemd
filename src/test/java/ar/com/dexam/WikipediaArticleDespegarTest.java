@@ -20,4 +20,15 @@ class WikipediaArticleDespegarTest {
     void getTopicCountWhenTheWordIsUpperCaseShouldBeZero() {
         Assert.assertEquals(0, WikipediaArticleDespegar.getTopicCount("PIZZA"));
     }
+
+    @Test
+    void getTopicCountWhenTheWordIssparrowShouldBe17() {
+        Assert.assertEquals(17, WikipediaArticleDespegar.getTopicCount("sparrow"));
+    }
+
+    @Test
+    void getTopicCountWhenTheWordIsfranceShouldBeZero3() {
+        Assert.assertEquals(3, WikipediaArticleDespegar.getTopicCount("france"));
+    }
+
 }
